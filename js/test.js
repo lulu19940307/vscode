@@ -1,24 +1,29 @@
-var arr=[];
+
+
 //这里添加一个注释
 window.onload = function(){
     var div=document.getElementById("div1");
-        div.onclick=function(){
+    div.onclick=function(){
         alert("hello world");
     }
+
     var btn=document.getElementById("reverse");
-    btn.onclick=function (){
+    var outputtxt=document.getElementById("output-txt");
+    btn.onclick=function(){
+       var arr=[];
+       outputtxt.value=" ";
        var str=document.getElementById("input-txt");
        var val=str.value;
-        //alert(val.length);
-        //alert(str_test.length);
-        
+       //alert(val);
         for(var i=val.length-1;i>=0;i--){
             arr.push(val[i]);
         }
-        alert(arr.length);
-        var outputtxt=document.getElementById("output-txt");
+        //alert(arr);
+        
         outputtxt.value=arr;
        
     };
     
+    
 }
+
