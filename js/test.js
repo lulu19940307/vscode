@@ -1,4 +1,5 @@
 var arr=[];
+//这里添加一个注释
 window.onload = function(){
     var div=document.getElementById("div1");
         div.onclick=function(){
